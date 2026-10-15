@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'com.jvufu864'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.minecraftforge:forge:1.21.4-47.1.0'
+    implementation 'net.minecraft:client:1.21.4'
+    implementation 'net.minecraft:server:1.21.4'
+    implementation 'net.minecraftforge:minecraftforge:1.21.4-47.1.0'
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", "1.21.4"
+}
+
+jar {
+    archiveFileName = "forgottensnowmanmod-${version}.jar"
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}

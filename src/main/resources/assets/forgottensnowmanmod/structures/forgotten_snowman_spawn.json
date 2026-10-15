@@ -1,0 +1,15 @@
+{
+  "size": [10, 10, 10],
+  "biomes": [
+    "minecraft:snowy_plains",
+    "minecraft:snowy_taiga"
+  ],
+  "start": {
+    "type": "minecraft:random_spread",
+    "spread": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 0,
+      "max_inclusive": 100
+    }
+  }
+}

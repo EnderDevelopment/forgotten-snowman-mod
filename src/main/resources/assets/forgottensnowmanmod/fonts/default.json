@@ -1,0 +1,17 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "forgottensnowmanmod:font/default.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        "0123456789",
+        "abcdefghijklmnopqrstuvwxyz",
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "!@#$%^&*()_+-=[]{}|;:,.<>?",
+        "\"\\\""
+      ]
+    }
+  ]
+}
